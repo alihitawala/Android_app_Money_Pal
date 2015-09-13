@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:horizontalSpacing="10dp"
+    android:orientation="horizontal"
+    android:verticalSpacing="10dp" 
+    android:id="@+id/item_table_layout"
+    android:paddingLeft="10dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:contentDescription="@string/imageContent"
+	        android:id="@+id/partner_image"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:paddingTop="5dp"
+	        android:src="@drawable/ic_launcher" >
+    	</ImageView>
+
+    	<TextView
+    	    android:id="@+id/partner_name"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    android:gravity="center_vertical|center_horizontal"
+    	    android:text="@string/testValue"
+    	    android:textSize="18dp"
+    	    android:textStyle="bold"
+    	    android:textColor="#ffffff" >
+
+    	</TextView>
+    </LinearLayout>
+    <TableRow
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/item_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+        
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/he_gave_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/he_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+        
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/you_gave_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/you_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+        
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/date_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+    	    android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+        
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/time_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+    	    android:textColor="#ffffff" />
+        
+    </TableRow>
+    
+</TableLayout>

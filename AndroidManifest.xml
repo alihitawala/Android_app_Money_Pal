@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developer.nita.hisabKitab"
+    android:versionCode="5"
+    android:versionName="1.03" >
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <!--<intent-filter>/>-->
+                <!--<action android:name="android.intent.action.MAIN">-->
+                <!--</action>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".PartnerActivity"
+            android:label="@string/title_activity_partner" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developer.nita.hisabKitab.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name=".SplitActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/split_the_bill" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.developer.nita.hisabKitab.MainActivity" />
+        </activity>
+
+        <activity android:name=".ShareActivity"
+            android:label="@string/activity_header_sms"  />
+ 
+        <activity android:name=".PartnerProfileActivity" /> 
+        
+        <activity android:name=".PdfActivity" />
+
+
+        <activity android:name=".SplashScreenActivity"
+                  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

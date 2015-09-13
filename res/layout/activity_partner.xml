@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:id="@+id/main_table"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+        android:background="#ffffff"
+        android:gravity="top"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkSlateGray"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--
+    <TableRow
+        android:background="#aaaaaa" 
+        android:gravity="center_horizontal"
+        android:id="@+id/partner_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </TableRow>
+    <TableRow
+        android:background="#aaaaaa" 
+        android:gravity="center_horizontal"
+        android:id="@+id/amount_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </TableRow>
+        -->
+
+        <TableRow
+            android:id="@+id/header_row"
+            android:layout_margin="2dip"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dip"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                android:src="@drawable/item_header" />
+
+            <ImageView
+                android:id="@+id/up_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dip"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                android:src="@drawable/minus_header" >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dip"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_header" >
+            </ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dip"
+                android:contentDescription="@string/none"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cal_header" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

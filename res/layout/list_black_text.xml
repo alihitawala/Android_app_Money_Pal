@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Definig a container for you List Item -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/White"
+                android:gravity="center_vertical" >
+
+    <!-- Defining where should text be placed. You set you text color here -->
+
+    <ImageView
+            android:id="@+id/icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/none"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignBottom="@+id/info"
+            android:layout_alignTop="@+id/label">
+    </ImageView>
+
+    <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/label"
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/DarkSlateGray"
+            android:textSize="14dp"
+            android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/label"
+            android:textColor="@color/Brown"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/label"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_marginLeft="30dp"/>
+
+</RelativeLayout>

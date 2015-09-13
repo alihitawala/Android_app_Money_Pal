@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pad_left">8dp</dimen>
+    <dimen name="pad_right">8dp</dimen>
+
+</resources>

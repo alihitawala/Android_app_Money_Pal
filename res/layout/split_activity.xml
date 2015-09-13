@@ -1,0 +1,221 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/split_view">
+
+    <TextView
+            android:id="@+id/select_partner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Select Partners"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/border" >
+    </ListView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/perhead_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/per_head_amount"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/per_head_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="0"
+            android:ems="4"
+            android:textAppearance="?android:attr/textAppearanceSmall" >
+        </TextView>
+        <RelativeLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	        <TextView
+	            android:id="@+id/checked_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="5dp"
+	            android:text="@string/num_checked"
+	            android:layout_toLeftOf="@+id/num_checked"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/num_checked"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignParentRight="true"
+	            android:ems="3"
+	            android:text="0"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/item_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/item_split"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:hint="Atleast 3 chars"
+            android:ems="10"
+            android:inputType="textPersonName" >
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/total_amount_text_view"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/amount_split"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/split_in"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/split_in"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="1" >
+        </EditText>
+    </LinearLayout>
+
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+       	<TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginTop="15dp"
+	        android:text="@string/date_text_view"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/date_split"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginRight="10dp"
+	        android:text="Medium Text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+	<RelativeLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+
+		    	<Button
+		    	    android:id="@+id/button1"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:drawableLeft="@drawable/cancel"
+                    android:drawablePadding="10dp"
+                    android:background="@color/DarkKhaki"
+                    android:textColor="@color/White"
+		    	   	android:layout_alignParentLeft="true"
+		    	    android:layout_marginLeft="15dp"
+		    	    android:layout_marginTop="15dp"
+		    	    android:text="Cancel" />
+
+		    	<Button
+		    	    android:id="@+id/button2"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:drawableLeft="@drawable/accept"
+                    android:drawablePadding="10dp"
+                    android:background="@color/DarkSlateGray"
+		    	    android:layout_alignParentRight="true"
+                    android:textColor="@color/White"
+		    	    android:layout_marginLeft="15dp"
+		    	    android:layout_marginRight="15dp"
+		    	    android:layout_marginTop="15dp"
+		    	    android:text="OK" />
+
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    android:id="@+id/item_table_layout"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+        android:background="@color/White">
+
+    <TableRow android:layout_width="wrap_content" >
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/item_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/edit_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/item_hint"
+            android:textSize="14dp"
+            android:width="150dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:cursorVisible="true">
+            <requestFocus/>
+       </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/you_gave_text_view"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/you_gave_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/you_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+    </TableRow>
+    
+	<TableRow>
+
+        <TextView
+            android:id="@+id/gender_gave"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/he_gave_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/he_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </TableRow>
+    <TableRow
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/date_text_view"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+       <TextView
+           android:id="@+id/date_view"
+           android:layout_width="116dp"
+           android:layout_height="wrap_content"
+           android:textSize="12dp" />
+   	</TableRow >
+</TableLayout>

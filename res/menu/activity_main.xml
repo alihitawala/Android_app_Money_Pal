@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/add_partner"
+        android:showAsAction="ifRoom|withText"
+        android:title="Add"/>
+    <item
+        android:id="@+id/split_main"
+        android:icon="@drawable/split_icon"
+        android:showAsAction="ifRoom|withText"
+        android:title="Split the bill"/>
+    <item
+        android:id="@+id/about"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/about"
+        android:title="Info"/>
+    <item
+        android:id="@+id/help"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/help"
+        android:title="Help"/>
+
+</menu>

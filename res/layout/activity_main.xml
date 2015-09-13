@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Brown">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:id="@+id/main_header"
+            android:text="Welcome!"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+    <RelativeLayout  android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <ListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+        </ListView>
+        <TextView android:id="@android:id/empty"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#FFFFFF"
+                  android:layout_margin="20dp"
+                  android:textColor="@color/DarkSlateGray"
+                  android:textSize="20dp"
+                  android:gravity="center_horizontal"
+                  android:text="@string/empty_main_activity"/>
+    </RelativeLayout>
+</LinearLayout>

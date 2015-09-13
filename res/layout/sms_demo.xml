@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dip">
+        <RadioGroup 
+            android:id="@+id/sms_length"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/small_radio"
+                android:text="@string/small_length"
+                android:layout_marginLeft="10dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/medium_radio"
+                android:text="@string/medium_length"
+                android:layout_marginLeft="10dp"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/large_radio"
+                android:text="@string/large_length"
+                android:layout_marginLeft="10dp"/>
+        </RadioGroup>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/share_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_message"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/share"
+                    android:drawablePadding="10dp"
+                    android:background="@color/DarkKhaki"
+                    android:textColor="@color/White"
+                    style="@style/AppTheme" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                    />
+            <Button
+                    android:id="@+id/sms_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sms_send_message"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:drawableLeft="@drawable/sms"
+                    android:drawablePadding="10dp"
+                    android:background="@color/DarkSlateGray"
+                    style="@style/AppTheme"
+                    android:textColor="@color/White"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true" android:shadowColor="@color/Gray" android:singleLine="false"
+                    />
+        </RelativeLayout>
+        <TableLayout
+            android:padding="6dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView android:text="@string/sms_content_label" />
+
+                <EditText
+                    android:id="@+id/sms_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:minLines="10"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="how are you my man, I am good , how is it going there tell me more about you" />
+                
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
